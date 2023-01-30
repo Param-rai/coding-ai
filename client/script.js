@@ -89,8 +89,6 @@ const handleSubmit = async (e) => {
     const parsedData = data.bot.trim();
     typeText(messageDiv, parsedData);
   } else {
-    const err = await response.text();
-    console.log(err);
     messageDiv.innerHTML = "Something Went Wrong...";
   }
 };
